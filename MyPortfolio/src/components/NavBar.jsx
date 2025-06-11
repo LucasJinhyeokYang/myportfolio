@@ -1,18 +1,22 @@
+// Navbar.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold">My Portfolio</h1>
-      <div className="space-x-4">
-        <Link to="/" className="hover:underline">Home</Link>
-        <Link to="/about" className="hover:underline">About</Link>
-        <Link to="/projects" className="hover:underline">Projects</Link>
-        <Link to="/contact" className="hover:underline">Contact</Link>
+    <nav className="flex justify-between items-center px-8 py-4 bg-gray-800 text-white">
+      <div className="text-2xl font-bold">
+        <Link to="/">Portfolio</Link>
+      </div>
+
+      <div className="space-x-6">
+        <Link to="/" className="hover:text-yellow-400 transition-colors duration-300">Home</Link>
+        <Link to="/about" className="hover:text-yellow-400 transition-colors duration-300">Jinhyeok</Link>
+        <Link to="/project" className="hover:text-yellow-400 transition-colors duration-300">Project</Link>
+        <Link to="/contact" className="hover:text-yellow-400 transition-colors duration-300">Contact</Link>
       </div>
     </nav>
   );
-}
 
-export default Navbar;
+
+}
