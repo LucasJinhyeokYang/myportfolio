@@ -4,5 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/s1-25-it709-as1-LucasJinhyeokYang/"
   plugins: [react(), tailwindcss()],
 })
